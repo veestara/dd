@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'about.css' %}">
+    <title>About Dyro Dev</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="f-logo" data-url="/"><img src="{% static 'aset/logo.svg' %}" alt=""></div>
+            <div class="nav">
+             
+                <div class="btn-n" data-url="/#con-pro">
+                    What we do?
+                </div>
+                <div class="btn-n" data-url="/#con-work">
+                    Work
+                </div>
+                <div class="btn-n" data-url="/about">
+                    About us
+                </div>
+                <div class="btn-n" data-url="/#con-contact">
+                    Contact us
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="left">
+                <h2>Dyro Dev. <br>
+                    <p>Is all about turning your awesome ideas into digital magic. Whether it’s web or app
+                        development,
+                        or snazzy UI/UX design, we’ve got you covered. Our mission? To add a splash of soul and a lot of
+                        sparkle to your projects.
+                        <span>Let’s make something amazing together!</span>
+                    </p>
+                </h2>
+
+
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <div class="f-logo" data-url="/">
+                <img class=".nav-logo" src="{% static 'aset/logo.svg' %}" alt="">
+                <p>Got a big idea? Let's make it happen</p>
+            </div>
+
+            <div class="nav">
+
+                <div class="btn-n" data-url="/#con-pro">
+                    What we do?
+                </div>
+                <div class="btn-n" data-url="/#con-work">
+                    Work
+                </div>
+                <div class="btn-n" data-url="/about">
+                    About us
+                </div>
+                <div class="btn-n" data-url="/#con-contact">
+                    Contact us
+                </div>
+            </div>
+
+            <div class="social">
+                <img src="{% static 'aset/yt.svgs' %}" alt="">
+                <img src="{% static 'aset/lkd.svgs' %}" alt="">
+                <img src="{% static 'aset/x.svgs' %}" alt="">
+                <img src="{% static 'aset/inst.svgs' %}" alt="">
+
+            </div>
+
+            <p>© Dyro Dev. All rights reserved 2024</p>
+
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+
+            const hlinks = document.querySelectorAll(".btn-n, .f-logo");
+
+
+            hlinks.forEach(link => {
+                link.addEventListener("click", function () {
+                    const url = this.getAttribute('data-url');
+                    window.location.href = url
+
+                    this.classList.add('clicked');
+
+                    setTimeout(() => {
+                        this.classList.remove('clicked');
+                    }, 300);
+                })
+            });
+        });
+    </script>
+</body>
+
+</html>

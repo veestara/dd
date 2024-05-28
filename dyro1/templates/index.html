@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dyro Dev</title>
+    <link rel="stylesheet" href="{% static 'index.css' %}">
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="f-logo" data-url="/"><img src="{% static 'aset/logo.svg' %}" alt=""></div>
+            <div class="nav">
+                <div class="btn-n" data-url="#con-pro">
+                    What we do?
+                </div>
+                <div class="btn-n" data-url="#con-work">
+                    Work
+                </div>
+                <div class="btn-n" data-url="/about">
+                    About us
+                </div>
+                <div class="btn-n" data-url="#con-contact">
+                    Contact us
+                </div>
+            </div>
+        </div>
+
+        <div class="hero">
+
+            <div class="left">
+                <div class="con-l">
+                    <div class="con">
+                        <svg id="o1" viewBox="0 0 100 200" xmlns="http://www.w3.org/2000/svg">
+                            <ellipse cx="25" cy="70" rx="25" ry="70" />
+                        </svg>
+
+                        <svg id="o2" viewBox="0 0 100 200" xmlns="http://www.w3.org/2000/svg">
+                            <ellipse cx="25" cy="70" rx="25" ry="70" />
+                        </svg>
+
+                        <svg id="o3" viewBox="0 0 100 200" xmlns="http://www.w3.org/2000/svg">
+                            <ellipse cx="25" cy="75" rx="25" ry="75" />
+                        </svg>
+
+                        <svg id="o4" viewBox="0 0 100 200" xmlns="http://www.w3.org/2000/svg">
+                            <ellipse cx="25" cy="75" rx="25" ry="75" />
+                        </svg>
+
+                        <img src="{% static 'aset/tt.svg' %}" alt="">
+                    </div>
+                </div>
+                         
+            </div>
+
+            <div class="right">
+                <h2>Hi There, <br> It's Dyro Dev.</h2>
+                <p>Got a big idea? Let's make it happen together.</p>
+            </div>
+        </div>
+
+        <div id="con-pro" class="con-pro">
+            <div class="s1">
+                <div class="left">
+                    <h2>We brainstorm, doodle, and dream big! <br> Let's brew some creativity together.</h2>
+                </div>
+
+                <div class="right">
+                    <div class="con1">
+                        <img src="{% static 'aset/e1.svg' %}" alt="">
+                        <svg id="o4" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="200" cy="200" r="100" />
+                        </svg>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="s1">
+                <div class="left">
+                    <h2>From pixels to perfection, we craft designs that pop and sizzle. <br> </h2>
+                </div>
+
+                <div class="right">
+                    <div class="con1">
+                        <img src="{% static 'aset/e2.svg' %}" alt="">
+                        <svg id="o4" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="200" cy="200" r="100" />
+                        </svg>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="s1">
+                <div class="left">
+                    <h2>Our developers work their magic, <br> turning lines of code into your dream product</h2>
+                </div>
+
+                <div class="right">
+                    <div class="con1">
+                        <img src="{% static 'aset/e3.svg' %}" alt="">
+                        <svg id="o4" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="200" cy="200" r="100" />
+                        </svg>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="s1">
+                <div class="left">
+                    <h2>We put it to the test and launch <br> your masterpiece into the digital universe!</h2>
+                </div>
+
+                <div class="right">
+                    <div class="con1">
+                        <img src="{% static 'aset/e4.svg' %}" alt="">
+                        <svg id="o4" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="200" cy="200" r="100" />
+                        </svg>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="background-elements">
+                <div class="element1"></div>
+                <div class="element2"></div>
+            </div>
+
+            <div class="con-spec">
+
+                <div class="card card1">
+
+                    <div class="cr">
+                        <img src="{% static 'aset/i2.svg' %}" alt="">
+                    </div>
+
+                    <h1>Full-Stack <br> Development</h1>
+                </div>
+                <div class="card card2">
+
+                    <div class="cr">
+                        <img src="{% static 'aset/i1.svg' %}" alt="">
+                    </div>
+
+                    <h1> App <br> Development</h1>
+                </div>
+                <div class="card card3">
+
+                    <div class="cr">
+                        <img src="{% static 'aset/i3.svg' %}" alt="">
+                    </div>
+
+                    <h1>UI/UX Design</h1>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="con-work" class="con-work">
+            <h1>Our Work</h1>
+            <div class="con-grid">
+                <div class="pro1">
+                    <div class="pic">
+                        <img src="{% static 'aset/image.png' %}" alt="">
+                    </div>
+                    <div class="txt">
+                        <h2>Sunpac</h2>
+                        <p>it's a solar product e-commerce site</p>
+                    </div>
+
+                </div>
+
+                <div class="pro1">
+                    <div class="pic">
+                        <img src="{% static 'aset/image.png' %}" alt="">
+                    </div>
+                    <div class="txt">
+                        <h2>Sunpac</h2>
+                        <p>it's a solar product e-commerce site</p>
+                    </div>
+
+                </div>
+
+                <div class="pro1">
+                    <div class="pic">
+                        <img src="{% static 'aset/image.png' %}" alt="">
+                    </div>
+                    <div class="txt">
+                        <h2>Sunpac</h2>
+                        <p>it's a solar product e-commerce site</p>
+                    </div>
+
+                </div>
+
+                <div class="pro1">
+
+                    <div class="pic">
+                        <img src="{% static 'aset/image.png' %}" alt="">
+                    </div>
+                    <div class="txt">
+                        <h2>Sunpac</h2>
+                        <p>it's a solar product e-commerce site</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="con-test">
+            <h1>What People Says...</h1>
+            <div class="con-slid">
+                <div class="card-t">
+                    <div class="info">
+                        <img src="{% static 'aset/dd.webp' %}" alt="">
+                        <div class="con-txt">
+                            <h2>Deed Doop</h2>
+                            <p>Founder</p>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat velit enim voluptatibus
+                            libero tenetur ad natus officia, numquam culpa dolorum non quidem hic alias laborum quam
+                            consequuntur vero excepturi laudantium!
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="card-t">
+                    <div class="info">
+                        <img src="{% static 'aset/dd.webp' %}" alt="">
+                        <div class="con-txt">
+                            <h2>Deed Doop</h2>
+                            <p>Founder</p>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat velit enim voluptatibus
+                            libero tenetur ad natus officia, numquam culpa dolorum non quidem hic alias laborum quam
+                            consequuntur vero excepturi laudantium!
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="card-t">
+                    <div class="info">
+                        <img src="{% static 'aset/dd.webp' %}" alt="">
+                        <div class="con-txt">
+                            <h2>Deed Doop</h2>
+                            <p>Founder</p>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat velit enim voluptatibus
+                            libero tenetur ad natus officia, numquam culpa dolorum non quidem hic alias laborum quam
+                            consequuntur vero excepturi laudantium!
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="con-contact" class="con-contact">
+            <div class="left">
+                <div class="txt">
+                    <h1>Hey! got a big idea? <br> Let's connect & make it happen </h1>
+                    <p>We are here to bring your idea to life!</p>
+                </div>
+            </div>
+            <div class="right">
+                <div class="con-form">
+                    <form action="{% url 'home'%}" method="post">
+                        {% csrf_token %}
+                        <input type="text" name="fullName" id="fullName" placeholder="Full Name" required>
+                        <input required type="tel" pattern="[0-9]{10}" inputmode="numeric" maxlength="10" required
+                            id="phone" name="phone" placeholder="No.">
+                        <input required type="email" id="email" name="email" placeholder="deed33@gmail.com"
+                            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+                        <textarea id="" rows="12" name="message" placeholder="Tell us about your big idea.."
+                            required></textarea>
+                        <button type="submit">Send</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="f-logo" data-url="/">
+                <img class=".nav-logo" src="{% static 'aset/logo.svg' %}" alt="">
+                <p>Got a big idea? Let's make it happen</p>
+            </div>
+
+            <div class="nav">
+                <div class="btn-n" data-url="#con-pro">
+                    What we do?
+                </div>
+                <div class="btn-n" data-url="#con-work">
+                    Work
+                </div>
+                <div class="btn-n" data-url="/about">
+                    About us
+                </div>
+                <div class="btn-n" data-url="#con-contact">
+                    Contact us
+                </div>
+            </div>
+
+            <div class="social">
+                <img src="{% static 'aset/yt.svgs' %}" alt="">
+                <img src="{% static 'aset/lkd.svgs' %}" alt="">
+                <img src="{% static 'aset/x.svgs' %}" alt="">
+                <img src="{% static 'aset/inst.svgs' %}" alt="">
+
+            </div>
+
+            <p>© Dyro Dev. All rights reserved 2024</p>
+
+        </div>
+    </div>
+
+    <script>
+        +document.addEventListener('scroll', function () {
+            const s1Elements = document.querySelectorAll('.s1');
+            const windowHeight = window.innerHeight;
+
+            s1Elements.forEach(s1 => {
+                const rect = s1.getBoundingClientRect();
+                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                const offset = rect.top + scrollTop;
+
+                const left = s1.querySelector('.left');
+                const right = s1.querySelector('.right');
+
+                const scrollPercent = (window.scrollY - offset + windowHeight) / (windowHeight + rect.height);
+
+                const parallaxOffset = (scrollPercent * 100) - 50; // Adjust this for the desired effect
+
+                left.style.transform = `translateY(${parallaxOffset * 2}px)`; // Adjust multiplier for speed
+                right.style.transform = `translateY(${parallaxOffset * 1.5}px)`; // Adjust multiplier for speed
+            });
+
+            const conElements = document.querySelectorAll('.con');
+
+
+            conElements.forEach(con => {
+                const rect = con.getBoundingClientRect();
+                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                const offset = rect.top + scrollTop;
+
+                const scrollPercent = (window.scrollY - offset + windowHeight) / (windowHeight + rect.height);
+                const parallaxOffset = (scrollPercent * 100) - 50; // Adjust this for the desired effect
+
+                con.style.transform = `translateY(${parallaxOffset * 2}px)`; // Adjust multiplier for speed
+            });
+        });
+
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const cards = document.querySelectorAll('.card');
+            let currentIndex = 0;
+
+            function showCard(index) {
+                cards.forEach((card, i) => {
+                    card.classList.remove('slick-current', 'slick-sprev', 'slick-sprev2');
+                    if (i === index) {
+                        card.classList.add('slick-current');
+                    } else if (i === (index + 1) % cards.length) {
+                        card.classList.add('slick-sprev');
+                    } else if (i === (index + 2) % cards.length) {
+                        card.classList.add('slick-sprev2');
+                    } else {
+                        card.style.opacity = '0';  // Ensure other cards are hidden
+                    }
+                });
+            }
+
+            function cycleCards() {
+                currentIndex = (currentIndex + 1) % cards.length;
+                showCard(currentIndex);
+            }
+
+            // Initialize the first card as current
+            showCard(currentIndex);
+
+            // Set an interval to cycle through cards every 5 seconds (5000 milliseconds)
+            setInterval(cycleCards, 3000);
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+
+            const hlinks = document.querySelectorAll(".btn-n, .f-logo");
+
+
+            hlinks.forEach(link => {
+                link.addEventListener("click", function () {
+                    const url = this.getAttribute('data-url');
+                    window.location.href = url
+
+                    this.classList.add('clicked');
+
+                    setTimeout(() => {
+                        this.classList.remove('clicked');
+                    }, 300);
+                })
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>

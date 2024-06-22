@@ -17,8 +17,8 @@ def about(request):
     return render(request, "about.html")
 
 
-def work(request):
-    return render(request, "work-view.html")
+def sunpac_view(request):
+    return render(request, "sunpac-view.html")
 
 def test(request):
     return render(request, 'test.html')

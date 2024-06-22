@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-{% load static %}
 <html lang="en">
+{% load static %}
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'about.css' %}">
-    <title>About - Dyro Dev</title>
+    <link rel="stylesheet" href="{% static 'project-view.css' %}">
+    <title>Work</title>
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-B5CS37QY3Z"></script>
     <script>
@@ -23,37 +24,52 @@
         <div class="header">
             <div class="f-logo" data-url="/"><img src="{% static 'aset/logo.svg' %}" alt=""></div>
             <div class="nav">
-
                 <div class="btn-n" data-url="/#con-pro">
                     What we do?
                 </div>
-                <div class="btn-n" data-url="/#con-work">
+                <div class="btn-n" id="dw" data-url="/#con-work">
                     Work
                 </div>
-                <div class="btn-n" data-url="/about">
+                <div class="btn-n" data-url="{% url 'about' %} ">
                     About us
                 </div>
-                <div class="btn-n" id="ss" data-url="/#con-contact">
+                <div id="ss" class="btn-n" data-url="/#con-contact">
                     Contact us
                 </div>
             </div>
         </div>
-
-        <div class="container">
-            <div class="left">
-                <h2>Dyro Dev. <br>
-                    <p>Is all about turning your awesome ideas into digital magic. Whether it’s web or app
-                        development,
-                        or snazzy UI/UX design, we’ve got you covered. Our mission? To add a splash of soul and a lot of
-                        sparkle to your projects.
-                        <span>Let’s make something amazing together!</span>
-                    </p>
-                </h2>
-
-
-            </div>
-
+        <div class="con-img">
+            <img src="{% static 'aset/1.webp' %}" alt="">
         </div>
+
+        <div class="con-img">
+            <img src="{% static 'aset/2.webp' %}" alt="">
+        </div>
+
+        <div class="con-img">
+            <img src="{% static 'aset/3.webp' %}" alt="">
+        </div>
+
+        <div class="con-img">
+            <img src="{% static 'aset/4.webp' %}" alt="">
+        </div>
+
+        <div class="con-img">
+            <img src="{% static 'aset/5.webp' %}" alt="">
+        </div>
+
+        <div class="con-img">
+            <img src="{% static 'aset/6.webp' %}" alt="">
+        </div>
+
+        <div class="con-img">
+            <img src="{% static 'aset/7.webp' %}" alt="">
+        </div>
+
+        <div class="con-img">
+            <img src="{% static 'aset/8.webp' %}" alt="">
+        </div>
+
 
         <div class="footer">
             <div class="f-logo" data-url="/">
@@ -62,11 +78,10 @@
             </div>
 
             <div class="nav">
-
                 <div class="btn-n" data-url="/#con-pro">
                     What we do?
                 </div>
-                <div class="btn-n" data-url="/#con-work">
+                <div class="btn-n" id="dw" data-url="/#con-work">
                     Work
                 </div>
                 <div class="btn-n" data-url="{% url 'about' %}">
